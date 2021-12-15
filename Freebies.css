@@ -1,0 +1,197 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.Bgimage{
+    width:100%;
+    height:100vh;
+    /*--background-image:linear-gradient(rgba(0,0,0,0.3),transparent), url("IMAGES/GUITARBLACK.jpg");--*/
+    background: radial-gradient(#E5D3B3,#FFBD59);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    height: 100%;
+    background-attachment: fixed ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    
+}
+
+.logo{
+    width:100px;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+.Cart{
+    width:80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cart-container i {
+    color:#000;
+    text-decoration: none;
+    padding: 2px 4px;
+    margin-right: 5px;
+    border:1px solid #000;
+    display: flex;
+    align-items: center;
+    transition:color 0.5s;
+    transition:background 0.2s;
+
+}
+
+.cart-container :hover{
+background: black;
+color:#fff;
+
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 30px;
+    
+}
+
+nav ul li a {
+    color:#000;
+    text-decoration: none;
+    position:relative;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav ul li a::after {
+    content: '';
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    transition: width 0.2s;
+
+}
+
+nav ul li a:hover::after {
+    width:50%;
+    background:#000;
+    
+}
+
+.navhov :hover{
+    color:#000;
+      
+}
+/*------ PRODUCTS -------*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.shirt{
+    flex-basis: 30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+
+}
+
+.shirt img{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.shirt .cost{
+    margin-top: 20px;
+}
+
+.shirt .des{
+    margin-bottom: 200px;
+    
+}
+
+
+.small-container{
+    max-width: 2000px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.titleline{
+    margin:0 auto 10px;
+    position:relative;
+    line-height: 60px;
+    color: #000;
+}
+
+.cost {
+    font-size: 14px;
+}
+
+.stars .fa{
+    color:#c38452;
+}
+
+.productcart{
+    display:inline-block;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background:#FFBD59;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 60px;
+    
+}
+
+
+.productdetails{
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.productdetails .shirt img{
+    padding: 0;
+}
+
+.productdetails .shirt{
+    padding: 20px;
+}
+
+
+.smallimg{
+    margin-bottom: 30px;
+    cursor: pointer;
+}

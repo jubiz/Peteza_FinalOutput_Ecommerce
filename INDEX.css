@@ -1,0 +1,191 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.Bgimage{
+    width:100%;
+    height:100vh;
+    /*--background-image:linear-gradient(rgba(0,0,0,0.3),transparent), url("IMAGES/GUITARBLACK.jpg");--*/
+    background: radial-gradient(#E5D3B3,#FFBD59);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    height: 1010px;
+    background-attachment: fixed ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    
+}
+
+.logo{
+    width:100px;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+.Cart{
+    width:80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cart-container i {
+    color:#000;
+    text-decoration: none;
+    padding: 2px 4px;
+    margin-right: 5px;
+    border:1px solid #000;
+    display: flex;
+    align-items: center;
+    transition:color 0.5s;
+    transition:background 0.2s;
+
+}
+
+.cart-container :hover{
+background: black;
+color:#fff;
+
+}
+
+
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 30px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:50px 30px;
+    
+}
+
+nav ul li a {
+    color:#000;
+    text-decoration: none;
+    position:relative;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+nav ul li a::after {
+    content: '';
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    transition: width 0.2s;
+
+}
+
+nav ul li a:hover::after {
+    width:50%;
+    background:#000;
+    
+}
+
+
+.navhov :hover{
+    color:#000;
+    
+      
+}
+
+#one{
+    display: inline-block;
+    top: 100%;
+    padding-right: 0%;
+}
+
+.Wname{
+    display: flex;
+    width:10px;
+    position:relative;
+   /*--- padding-left: 0%;
+    top:20%;--*/    
+}
+
+
+
+.text-box{
+    color:#fff;
+    position: relative;
+    /*--bottom: 5%;
+    left: 5%;--*/
+}
+
+.text-box h1 {
+    font-size: 90px;
+    line-height: 130px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    background: url(IMAGES/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 22px;
+    font-weight: 900;
+
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-box a{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border:2px solid #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.text-box .row{
+    font-size: 20px;
+    line-height: 15px;
+    margin-left: 5px;   
+}
+
+.row :hover{
+    background:#000;
+
+}

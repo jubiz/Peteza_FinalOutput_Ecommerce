@@ -1,0 +1,257 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Bgimage{
+    width:100%;
+    /*--background-image:linear-gradient(rgba(0,0,0,0.3),transparent), url("IMAGES/GUITARBLACK.jpg");--*/
+    background: radial-gradient(#E5D3B3,#FFBD59);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    height: 1000px; 
+    background-attachment: fixed ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    
+}
+
+.logo{
+    width:100px;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+.Cart{
+    width:80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cart-container i {
+        color:#000;
+        text-decoration: none;
+        padding: 2px 4px;
+        margin-right: 5px;
+        border:1px solid #000;
+        display: flex;
+        align-items: center;
+        transition:color 0.5s;
+        transition:background 0.2s;
+
+}
+
+.cart-container :hover{
+    background: black;
+    color:#fff;
+    
+}
+
+
+nav ul{
+    flex:1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 30px;
+    
+}
+
+nav ul li a {
+    color:#000;
+    text-decoration: none;
+    position:relative;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav ul li a::after {
+    content: '';
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    transition: width 0.2s;
+
+}
+
+nav ul li a:hover::after {
+    width:50%;
+    background:#000;
+    
+}
+
+.navhov :hover{
+    color:#000;
+      
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+   font-size: 80px;
+   text-transform: capitalize;
+   margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+span{
+    color: #000;
+}
+
+.about-text p{
+    color: #DC143C;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background: #FFBD59;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding:13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #FFBD59;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family:'Bebas Neue', cursive ;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin:10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a :hover i{
+    color: #000;
+
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}   
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
